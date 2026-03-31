@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>InMemoryRepository.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lms-backend</a> &gt; <a href="index.source.html" class="el_package">com.lms.backend.repository</a> &gt; <span class="el_source">InMemoryRepository.java</span></div><h1>InMemoryRepository.java</h1><pre class="source lang-java linenums">package com.lms.backend.repository;
+
+import com.lms.backend.model.*;
+import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+@Repository
+<span class="fc" id="L12">public class InMemoryRepository {</span>
+<span class="fc" id="L13">    private final List&lt;Student&gt; students = new CopyOnWriteArrayList&lt;&gt;();</span>
+<span class="fc" id="L14">    private final List&lt;Course&gt; courses = new CopyOnWriteArrayList&lt;&gt;();</span>
+<span class="fc" id="L15">    private final List&lt;Instructor&gt; instructors = new CopyOnWriteArrayList&lt;&gt;();</span>
+<span class="fc" id="L16">    private final List&lt;Enrollment&gt; enrollments = new CopyOnWriteArrayList&lt;&gt;();</span>
+
+    // Students
+<span class="fc" id="L19">    public void addStudent(Student student) { students.add(student); }</span>
+<span class="fc" id="L20">    public List&lt;Student&gt; findAllStudents() { return new ArrayList&lt;&gt;(students); }</span>
+    public Optional&lt;Student&gt; findStudentById(Long id) {
+<span class="nc" id="L22">        return students.stream().filter(s -&gt; s.id().equals(id)).findFirst();</span>
+    }
+
+    // Courses
+<span class="fc" id="L26">    public void addCourse(Course course) { courses.add(course); }</span>
+<span class="nc" id="L27">    public List&lt;Course&gt; findAllCourses() { return new ArrayList&lt;&gt;(courses); }</span>
+    public Optional&lt;Course&gt; findCourseById(Long id) {
+<span class="fc" id="L29">        return courses.stream().filter(c -&gt; c.id().equals(id)).findFirst();</span>
+    }
+
+    // Instructors
+<span class="fc" id="L33">    public void addInstructor(Instructor instructor) { instructors.add(instructor); }</span>
+<span class="fc" id="L34">    public List&lt;Instructor&gt; findAllInstructors() { return new ArrayList&lt;&gt;(instructors); }</span>
+    public Optional&lt;Instructor&gt; findInstructorById(Long id) {
+<span class="fc" id="L36">        return instructors.stream().filter(i -&gt; i.id().equals(id)).findFirst();</span>
+    }
+
+    // Enrollments
+<span class="fc" id="L40">    public void addEnrollment(Enrollment enrollment) { enrollments.add(enrollment); }</span>
+<span class="fc" id="L41">    public List&lt;Enrollment&gt; findAllEnrollments() { return new ArrayList&lt;&gt;(enrollments); }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

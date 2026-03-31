@@ -1,0 +1,14 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+lms-backend,com.lms.backend.repository,InMemoryRepository,19,91,0,0,2,14,3,12,3,12
+lms-backend,com.lms.backend.service,StudentService,0,91,0,2,0,19,0,10,0,9
+lms-backend,com.lms.backend.service,InstructorService,1,114,1,5,0,20,1,11,0,9
+lms-backend,com.lms.backend.service,DataInitializer,0,134,0,0,0,17,0,2,0,2
+lms-backend,com.lms.backend,LmsBackendApplication,5,3,0,0,2,1,1,1,1,1
+lms-backend,com.lms.backend.dto,InstructorDTO,0,12,0,0,0,1,0,1,0,1
+lms-backend,com.lms.backend.dto,CourseDTO,0,12,0,0,0,1,0,1,0,1
+lms-backend,com.lms.backend.controller,StudentController,0,15,0,0,0,5,0,3,0,3
+lms-backend,com.lms.backend.controller,InstructorController,0,14,0,0,0,5,0,3,0,3
+lms-backend,com.lms.backend.model,Course,0,12,0,0,0,1,0,1,0,1
+lms-backend,com.lms.backend.model,Enrollment,0,9,0,0,0,1,0,1,0,1
+lms-backend,com.lms.backend.model,Instructor,0,9,0,0,0,1,0,1,0,1
+lms-backend,com.lms.backend.model,Student,0,9,0,0,0,1,0,1,0,1

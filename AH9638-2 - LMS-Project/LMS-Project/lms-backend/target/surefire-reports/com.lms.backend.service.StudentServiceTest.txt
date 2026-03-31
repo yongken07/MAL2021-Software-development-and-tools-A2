@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lms.backend.service.StudentServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.617 s -- in com.lms.backend.service.StudentServiceTest

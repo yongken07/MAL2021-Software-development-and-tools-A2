@@ -1,0 +1,13 @@
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/LmsBackendApplication.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/controller/InstructorController.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/controller/StudentController.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/dto/CourseDTO.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/dto/InstructorDTO.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/model/Course.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/model/Enrollment.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/model/Instructor.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/model/Student.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/repository/InMemoryRepository.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/service/DataInitializer.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/service/InstructorService.java
+/Users/test/Desktop/LMS-Project/lms-backend/src/main/java/com/lms/backend/service/StudentService.java

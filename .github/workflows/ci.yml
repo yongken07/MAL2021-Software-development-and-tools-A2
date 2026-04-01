@@ -11,11 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
+
       - name: Run tests with Maven
-        working-directory: ./AH9638-2 - LMS-Project
+        working-directory: Assessment/LMS-Project
         run: mvn test --no-transfer-progress
+```
+
+The key line is:
+```
+working-directory: Assessment/LMS-Project

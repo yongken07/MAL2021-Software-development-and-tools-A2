@@ -21,8 +21,3 @@ jobs:
       - name: Run tests with Maven
         working-directory: Assessment/LMS-Project
         run: mvn test --no-transfer-progress
-```
-
-The key line is:
-```
-working-directory: Assessment/LMS-Project

@@ -17,4 +17,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Run tests with Maven
+        working-directory: ./AH9638-2 - LMS-Project
         run: mvn test --no-transfer-progress
